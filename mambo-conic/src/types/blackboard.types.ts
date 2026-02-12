@@ -1,5 +1,5 @@
 // 黑板内容类型
-export type BlackboardType = 'image' | 'video' | 'math' | 'lab';
+export type BlackboardType = 'image' | 'video' | 'math' | 'lab' | 'iframe';
 
 // 黑板内容 - 基础接口
 export interface BlackboardContentBase {
@@ -39,5 +39,11 @@ export interface LabBlackboard extends BlackboardContentBase {
   config?: any;     // 可选的额外配置（为了向后兼容）
 }
 
+// 外部 iframe 黑板
+export interface IframeBlackboard extends BlackboardContentBase {
+  type: 'iframe';
+  src: string;      // iframe URL
+}
+
 // 黑板内容联合类型
-export type BlackboardContent = ImageBlackboard | VideoBlackboard | MathBlackboard | LabBlackboard;
+export type BlackboardContent = ImageBlackboard | VideoBlackboard | MathBlackboard | LabBlackboard | IframeBlackboard;

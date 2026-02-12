@@ -1,12 +1,12 @@
 // 导入其他类型文件
 import type { MamboExpression, MamboAction, MamboConfig } from './mambo.types';
-import type { BlackboardType, LabType, BlackboardContentBase, ImageBlackboard, VideoBlackboard, MathBlackboard, LabBlackboard, BlackboardContent } from './blackboard.types';
+import type { BlackboardType, BlackboardContentBase, ImageBlackboard, VideoBlackboard, MathBlackboard, LabBlackboard, IframeBlackboard, BlackboardContent } from './blackboard.types';
 import type { DialogueContent, SceneOption } from './dialogue.types';
 import type { GameMode } from './game.types';
 
 // 重新导出所有类型以保持向后兼容
 export type { MamboExpression, MamboAction, MamboConfig };
-export type { BlackboardType, LabType, BlackboardContentBase, ImageBlackboard, VideoBlackboard, MathBlackboard, LabBlackboard, BlackboardContent };
+export type { BlackboardType, BlackboardContentBase, ImageBlackboard, VideoBlackboard, MathBlackboard, LabBlackboard, IframeBlackboard, BlackboardContent };
 export type { DialogueContent, SceneOption };
 export type { GameMode };
 

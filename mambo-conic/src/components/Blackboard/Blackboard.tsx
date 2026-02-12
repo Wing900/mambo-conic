@@ -89,6 +89,18 @@ export function Blackboard({ content }: BlackboardProps) {
         />
       );
 
+    case 'iframe':
+      blackboardLogger.debug('渲染外部iframe:', content.src);
+      return (
+        <iframe
+          src={content.src}
+          className={content.className || 'w-full h-full'}
+          style={{ border: 'none', ...content.style }}
+          title="外部实验"
+          allowFullScreen
+        />
+      );
+
     default:
       blackboardLogger.warn('未知的黑板类型:', content.type);
       return (
