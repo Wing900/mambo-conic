@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="576pt" viewBox="0 0 864 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-02-12T10:51:19.797916</dc:date>
+    <dc:date>2026-02-12T13:31:51.132800</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,44 +21,54 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 576 
-L 864 576 
-L 864 0 
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
 L 0 0 
 z
 " style="fill: #fefdf5"/>
   </g>
   <g id="axes_1">
    <g id="line2d_1">
-    <path d="M 432 86.4 
-L 432 115.2 
-L 216 115.2 
-L 216 144 
-" clip-path="url(#pbb91b56983)" style="fill: none; stroke: #636363; stroke-linecap: square"/>
+    <path d="M 576 122.4 
+L 576 158.4 
+L 288 158.4 
+L 288 187.2 
+" clip-path="url(#pd8a865ba35)" style="fill: none; stroke: #636363; stroke-width: 1.2; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
-    <path d="M 432 86.4 
-L 432 115.2 
-L 648 115.2 
-L 648 144 
-" clip-path="url(#pbb91b56983)" style="fill: none; stroke: #636363; stroke-linecap: square"/>
+    <path d="M 576 122.4 
+L 576 158.4 
+L 864 158.4 
+L 864 187.2 
+" clip-path="url(#pd8a865ba35)" style="fill: none; stroke: #636363; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 288 244.8 
+L 288 266.4 
+" clip-path="url(#pd8a865ba35)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #636363; stroke-width: 0.8"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 864 244.8 
+L 864 266.4 
+" clip-path="url(#pd8a865ba35)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #636363; stroke-width: 0.8"/>
    </g>
    <g id="text_1">
     <g id="patch_2">
-     <path d="M 360 74.889844 
-L 504 74.889844 
-Q 513 74.889844 513 65.889844 
-L 513 49.310156 
-Q 513 40.310156 504 40.310156 
-L 360 40.310156 
-Q 351 40.310156 351 49.310156 
-L 351 65.889844 
-Q 351 74.889844 360 74.889844 
+     <path d="M 456 97.464375 
+L 696 97.464375 
+Q 710.4 97.464375 710.4 83.064375 
+L 710.4 60.935625 
+Q 710.4 46.535625 696 46.535625 
+L 456 46.535625 
+Q 441.6 46.535625 441.6 60.935625 
+L 441.6 83.064375 
+Q 441.6 97.464375 456 97.464375 
 z
-" style="fill: #fefdf5; stroke: #111111; stroke-width: 0.8; stroke-linejoin: miter"/>
+" style="fill: #ffffff; opacity: 0.9; stroke: #636363; stroke-linejoin: miter"/>
     </g>
-    <!-- 用坐标法研究几何 -->
-    <g transform="translate(360 62.793281) scale(0.18 -0.18)">
+    <!-- 用坐标法研究几何图形 -->
+    <g style="fill: #111111" transform="translate(456 78.935625) scale(0.24 -0.24)">
      <defs>
       <path id="LXGWWenKai-Regular-7528" d="M 5370 -109 
 L 5376 -294 
@@ -798,6 +808,205 @@ L 3712 1786
 L 3770 2624 
 z
 " transform="scale(0.015625)"/>
+      <path id="LXGWWenKai-Regular-56fe" d="M 5498 250 
+Q 5715 19 5715 -54 
+Q 5715 -128 5651 -134 
+Q 5587 -141 5498 -147 
+L 1325 -243 
+L 1325 -454 
+Q 1325 -621 1222 -621 
+Q 1082 -621 989 -534 
+Q 896 -448 896 -377 
+Q 896 -307 918 -195 
+Q 941 -83 941 166 
+L 934 4365 
+Q 934 4595 851 4749 
+Q 838 4781 825 4809 
+Q 813 4838 813 4858 
+Q 813 4902 896 4902 
+Q 979 4902 1344 4774 
+L 5171 4947 
+L 5229 4947 
+Q 5376 4947 5472 4864 
+Q 5568 4781 5568 4726 
+Q 5568 4672 5545 4643 
+Q 5523 4614 5523 4582 
+L 5498 250 
+z
+M 5139 4614 
+L 1306 4435 
+L 1325 109 
+L 5120 218 
+L 5139 4614 
+z
+M 3885 1478 
+Q 3885 1414 3833 1331 
+Q 3782 1248 3718 1248 
+Q 3654 1248 3430 1379 
+Q 3206 1510 2739 1696 
+Q 2643 1728 2643 1792 
+Q 2643 1856 2688 1917 
+Q 2733 1978 2784 1978 
+Q 2835 1978 2992 1930 
+Q 3149 1882 3449 1747 
+Q 3750 1613 3763 1606 
+Q 3885 1542 3885 1478 
+z
+M 3622 442 
+Q 3040 800 2483 1030 
+Q 2387 1075 2387 1142 
+Q 2387 1210 2432 1277 
+Q 2477 1344 2534 1344 
+Q 2592 1344 3037 1145 
+Q 3482 947 3930 710 
+Q 4051 640 4051 553 
+Q 4051 467 3977 390 
+Q 3904 314 3869 314 
+Q 3834 314 3622 442 
+z
+M 2982 3795 
+L 3846 3853 
+L 3891 3853 
+Q 4109 3853 4173 3731 
+Q 4198 3680 4198 3635 
+Q 4198 3590 4156 3555 
+Q 4115 3520 4102 3501 
+Q 3891 3091 3475 2656 
+Q 4051 2227 4941 1888 
+Q 5024 1856 5024 1801 
+Q 5024 1747 4909 1660 
+Q 4794 1574 4704 1574 
+Q 4614 1574 4121 1849 
+Q 3629 2125 3238 2432 
+Q 2509 1811 1734 1510 
+Q 1555 1446 1488 1446 
+Q 1421 1446 1421 1504 
+Q 1421 1574 1568 1651 
+Q 2470 2150 2989 2650 
+Q 2752 2854 2496 3149 
+Q 2246 2880 2028 2717 
+Q 1811 2554 1747 2554 
+Q 1696 2554 1696 2621 
+Q 1696 2688 1776 2761 
+Q 1856 2835 2067 3081 
+Q 2278 3328 2490 3648 
+Q 2765 4090 2771 4314 
+Q 2771 4378 2819 4378 
+Q 2867 4378 2944 4346 
+Q 3162 4256 3162 4134 
+Q 3162 4032 2982 3795 
+z
+M 2771 3488 
+L 2688 3373 
+Q 2880 3142 3206 2867 
+Q 3539 3226 3706 3539 
+L 2771 3488 
+z
+" transform="scale(0.015625)"/>
+      <path id="LXGWWenKai-Regular-5f62" d="M 5574 4602 
+Q 5005 3872 4326 3450 
+Q 4045 3277 3853 3197 
+Q 3661 3117 3600 3117 
+Q 3539 3117 3539 3162 
+Q 3539 3219 3661 3302 
+Q 4237 3712 4717 4221 
+Q 5197 4730 5197 4915 
+Q 5203 5030 5267 5030 
+Q 5312 5030 5395 4972 
+Q 5478 4915 5548 4835 
+Q 5619 4755 5619 4707 
+Q 5619 4659 5574 4602 
+z
+M 2829 -390 
+Q 2829 -538 2710 -538 
+Q 2592 -538 2496 -461 
+Q 2400 -384 2400 -301 
+L 2400 -250 
+Q 2426 6 2426 320 
+L 2426 2381 
+L 1683 2342 
+Q 1600 986 1088 192 
+Q 851 -166 576 -435 
+Q 493 -518 438 -518 
+Q 384 -518 384 -464 
+Q 384 -410 505 -246 
+Q 627 -83 806 269 
+Q 1203 1075 1286 2323 
+L 717 2291 
+L 640 2291 
+Q 538 2291 438 2368 
+Q 339 2445 294 2624 
+L 294 2650 
+Q 294 2688 326 2688 
+Q 358 2688 428 2665 
+Q 499 2643 621 2643 
+L 672 2643 
+L 1306 2675 
+Q 1325 3174 1325 4122 
+L 1037 4109 
+L 979 4109 
+Q 826 4109 736 4211 
+Q 646 4314 614 4429 
+L 614 4454 
+Q 614 4493 646 4493 
+Q 678 4493 752 4470 
+Q 826 4448 941 4448 
+L 992 4448 
+L 2995 4550 
+Q 3110 4563 3177 4585 
+Q 3245 4608 3289 4608 
+Q 3334 4608 3405 4557 
+Q 3578 4435 3578 4326 
+Q 3578 4250 3418 4237 
+L 2810 4205 
+L 2816 2752 
+L 3200 2771 
+Q 3315 2784 3385 2803 
+Q 3456 2822 3504 2822 
+Q 3552 2822 3622 2761 
+Q 3693 2701 3737 2630 
+Q 3782 2560 3782 2534 
+Q 3782 2458 3622 2445 
+L 2816 2400 
+L 2829 -390 
+z
+M 1734 3661 
+Q 1734 3142 1709 2694 
+L 2426 2733 
+L 2426 4186 
+L 1728 4147 
+L 1734 3661 
+z
+M 5709 3226 
+Q 5107 2342 4314 1869 
+Q 3994 1670 3779 1584 
+Q 3565 1498 3513 1498 
+Q 3462 1498 3462 1552 
+Q 3462 1606 3584 1690 
+Q 4282 2170 4806 2736 
+Q 5331 3302 5344 3558 
+Q 5357 3674 5417 3674 
+Q 5478 3674 5558 3610 
+Q 5638 3546 5696 3466 
+Q 5754 3386 5754 3338 
+Q 5754 3290 5709 3226 
+z
+M 5542 2182 
+Q 5542 2266 5606 2266 
+Q 5709 2266 5843 2131 
+Q 5978 1997 5978 1936 
+Q 5978 1875 5939 1818 
+Q 5318 768 4448 109 
+Q 3808 -378 3264 -570 
+Q 3066 -640 3011 -640 
+Q 2957 -640 2957 -582 
+Q 2957 -525 3098 -442 
+Q 3891 32 4451 617 
+Q 5011 1203 5466 1882 
+Q 5542 2003 5542 2138 
+L 5542 2182 
+z
+" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#LXGWWenKai-Regular-7528"/>
      <use xlink:href="#LXGWWenKai-Regular-5750" transform="translate(99.999985 0)"/>
@@ -807,24 +1016,26 @@ z
      <use xlink:href="#LXGWWenKai-Regular-7a76" transform="translate(499.999924 0)"/>
      <use xlink:href="#LXGWWenKai-Regular-51e0" transform="translate(599.999908 0)"/>
      <use xlink:href="#LXGWWenKai-Regular-4f55" transform="translate(699.999893 0)"/>
+     <use xlink:href="#LXGWWenKai-Regular-56fe" transform="translate(799.999878 0)"/>
+     <use xlink:href="#LXGWWenKai-Regular-5f62" transform="translate(899.999863 0)"/>
     </g>
    </g>
    <g id="text_2">
     <g id="patch_3">
-     <path d="M 153 186.31 
-L 279 186.31 
-Q 286 186.31 286 179.31 
-L 286 166.29 
-Q 286 159.29 279 159.29 
-L 153 159.29 
-Q 146 159.29 146 166.29 
-L 146 179.31 
-Q 146 186.31 153 186.31 
+     <path d="M 202.5 236.235 
+L 373.5 236.235 
+Q 384.9 236.235 384.9 224.835 
+L 384.9 207.165 
+Q 384.9 195.765 373.5 195.765 
+L 202.5 195.765 
+Q 191.1 195.765 191.1 207.165 
+L 191.1 224.835 
+Q 191.1 236.235 202.5 236.235 
 z
-" style="fill: #fefdf5; stroke: #111111; stroke-width: 0.8; stroke-linejoin: miter"/>
+" style="fill: #ffffff; opacity: 0.9; stroke: #636363; stroke-linejoin: miter"/>
     </g>
     <!-- 直线与圆的位置关系 -->
-    <g transform="translate(153 176.901563) scale(0.14 -0.14)">
+    <g style="fill: #111111" transform="translate(202.5 221.566406) scale(0.19 -0.19)">
      <defs>
       <path id="LXGWWenKai-Regular-76f4" d="M 2131 70 
 L 4198 141 
@@ -1734,20 +1945,20 @@ z
    </g>
    <g id="text_3">
     <g id="patch_4">
-     <path d="M 592 186.31 
-L 704 186.31 
-Q 711 186.31 711 179.31 
-L 711 166.29 
-Q 711 159.29 704 159.29 
-L 592 159.29 
-Q 585 159.29 585 166.29 
-L 585 179.31 
-Q 585 186.31 592 186.31 
+     <path d="M 788 236.235 
+L 940 236.235 
+Q 951.4 236.235 951.4 224.835 
+L 951.4 207.165 
+Q 951.4 195.765 940 195.765 
+L 788 195.765 
+Q 776.6 195.765 776.6 207.165 
+L 776.6 224.835 
+Q 776.6 236.235 788 236.235 
 z
-" style="fill: #fefdf5; stroke: #111111; stroke-width: 0.8; stroke-linejoin: miter"/>
+" style="fill: #ffffff; opacity: 0.9; stroke: #636363; stroke-linejoin: miter"/>
     </g>
     <!-- 圆与圆的位置关系 -->
-    <g transform="translate(592 176.901563) scale(0.14 -0.14)">
+    <g style="fill: #111111" transform="translate(788 221.566406) scale(0.19 -0.19)">
      <use xlink:href="#LXGWWenKai-Regular-5706"/>
      <use xlink:href="#LXGWWenKai-Regular-4e0e" transform="translate(99.999985 0)"/>
      <use xlink:href="#LXGWWenKai-Regular-5706" transform="translate(199.999969 0)"/>
@@ -1760,7 +1971,7 @@ z
    </g>
    <g id="text_4">
     <!-- · 相交 ($\Delta &gt; 0$) -->
-    <g transform="translate(177.325 230.4) scale(0.13 -0.13)">
+    <g transform="translate(237.425 293.320469) scale(0.17 -0.17)">
      <defs>
       <path id="LXGWWenKai-Regular-b7" d="M 1702 2240 
 Q 1702 2035 1564 1894 
@@ -2039,7 +2250,7 @@ z
    </g>
    <g id="text_5">
     <!-- · 相切 ($\Delta = 0$) -->
-    <g transform="translate(177.325 276.48) scale(0.13 -0.13)">
+    <g transform="translate(237.425 350.835469) scale(0.17 -0.17)">
      <defs>
       <path id="LXGWWenKai-Regular-5207" d="M 4723 38 
 Q 4851 -13 4876 -13 
@@ -2149,7 +2360,7 @@ z
    </g>
    <g id="text_6">
     <!-- · 相离 ($\Delta &lt; 0$) -->
-    <g transform="translate(177.325 322.56) scale(0.13 -0.13)">
+    <g transform="translate(237.425 408.690469) scale(0.17 -0.17)">
      <defs>
       <path id="LXGWWenKai-Regular-79bb" d="M 1158 4102 
 L 1024 4096 
@@ -2319,7 +2530,7 @@ z
    </g>
    <g id="text_7">
     <!-- · 外离 ($d &gt; r_1 + r_2$) -->
-    <g style="fill: #111111" transform="translate(597.495 230.4) scale(0.13 -0.13)">
+    <g style="fill: #111111" transform="translate(797.955 293.490469) scale(0.17 -0.17)">
      <defs>
       <path id="LXGWWenKai-Regular-5916" d="M 3898 4838 
 Q 3898 4998 3802 5146 
@@ -2523,7 +2734,7 @@ z
    </g>
    <g id="text_8">
     <!-- · 外切 ($d = r_1 + r_2$) -->
-    <g style="fill: #111111" transform="translate(597.495 276.48) scale(0.13 -0.13)">
+    <g style="fill: #111111" transform="translate(797.955 351.005469) scale(0.17 -0.17)">
      <use xlink:href="#LXGWWenKai-Regular-b7" transform="translate(0 0.40625)"/>
      <use xlink:href="#LXGWWenKai-Regular-20" transform="translate(34.999985 0.40625)"/>
      <use xlink:href="#LXGWWenKai-Regular-5916" transform="translate(69.999969 0.40625)"/>
@@ -2542,7 +2753,7 @@ z
    </g>
    <g id="text_9">
     <!-- · 相交 ($|r_1 - r_2| &lt; d &lt; r_1 + r_2$) -->
-    <g style="fill: #d6604d" transform="translate(572.08 322.56) scale(0.13 -0.13)">
+    <g style="fill: #d6604d" transform="translate(764.72 408.520469) scale(0.17 -0.17)">
      <defs>
       <path id="STIXGeneral-Regular-7c" d="M 851 -90 
 L 429 -90 
@@ -2585,7 +2796,7 @@ z
    </g>
    <g id="text_10">
     <!-- · 内切 ($d = |r_1 - r_2|$) -->
-    <g style="fill: #111111" transform="translate(594.895 368.64) scale(0.13 -0.13)">
+    <g style="fill: #111111" transform="translate(794.555 466.120469) scale(0.17 -0.17)">
      <defs>
       <path id="LXGWWenKai-Regular-5185" d="M 5434 -32 
 L 5453 -262 
@@ -2664,8 +2875,8 @@ z
     </g>
    </g>
    <g id="text_11">
-    <!-- · 内含 ($d &lt; |r_1 - r_2| $) -->
-    <g style="fill: #111111" transform="translate(594.895 414.72) scale(0.13 -0.13)">
+    <!-- · 内含 ($d &lt; |r_1 - r_2|$) -->
+    <g style="fill: #111111" transform="translate(794.555 523.890469) scale(0.17 -0.17)">
      <defs>
       <path id="LXGWWenKai-Regular-542b" d="M 2662 3296 
 Q 2592 3322 2563 3357 
@@ -2779,8 +2990,8 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pbb91b56983">
-   <rect x="0" y="0" width="864" height="576"/>
+  <clipPath id="pd8a865ba35">
+   <rect x="0" y="0" width="1152" height="648"/>
   </clipPath>
  </defs>
 </svg>
