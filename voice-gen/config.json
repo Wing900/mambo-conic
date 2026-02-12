@@ -1,0 +1,7 @@
+{
+  "speaker": "东海帝王 Tokai Teio (Umamusume Pretty Derby)",
+  "language": "简体中文",
+  "speed": 0.7,
+  "api_name": "/tts_fn",
+  "output_dir": "../mambo-conic/public/labmusic"
+}
