@@ -1,0 +1,97 @@
+{
+  "chapter": "第一章：探秘圆锥曲线的由来",
+  "scenes": [
+    {
+      "id": "ch01_s11_summary",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "实验做完了，我们来做个总结。这三种曲线，全都是切出来的。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
+      "next": "ch01_s11_question"
+    },
+    {
+      "id": "ch01_s11_question",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "那曼波要问这最后也是最重要的问题了：想要得到我们要学的椭圆，角度 α 必须满足什么条件？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
+      "next": "ch01_s11_quiz"
+    },
+    {
+      "id": "ch01_s11_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "回忆一下刚才的实验，选出正确的条件。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
+      "options": [
+        { "text": "A. α = θ （平行）", "correct": false, "next": "ch01_s11_wrong_a" },
+        { "text": "B. α < θ （更陡）", "correct": false, "next": "ch01_s11_wrong_b" },
+        { "text": "C. θ < α < 90° （介于平行和垂直之间）", "correct": true, "next": "ch01_s11_correct", "scoreChange": 10 }
+      ]
+    },
+    {
+      "id": "ch01_s11_wrong_a",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "α = θ 可是刚才那个合不拢的抛物线哦。重选！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
+      "next": "ch01_s11_quiz"
+    },
+    {
+      "id": "ch01_s11_wrong_b",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "太斜啦！都切到上面去了，那是双曲线。重选！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
+      "next": "ch01_s11_quiz"
+    },
+    {
+      "id": "ch01_s11_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "excited" },
+      "dialogue": { "text": "BINGO！完全正确！θ < α < 90°，这就是椭圆诞生的条件。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
+      "next": "ch01_s12_history"
+    },
+    {
+      "id": "ch01_s12_history",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "其实，把它们统称为「圆锥曲线」的人，是古希腊的阿波罗尼斯。他在公元前3世纪就写出了《圆锥曲线论》。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/apollonius.png" },
+      "next": "ch01_s12_amazed"
+    },
+    {
+      "id": "ch01_s12_amazed",
+      "type": "dialogue",
+      "mambo": { "expression": "surprised" },
+      "dialogue": { "text": "那时候可没有电脑，全靠大脑想象。是不是很厉害？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/apollonius.png" },
+      "next": "ch01_s13_bridge"
+    },
+    {
+      "id": "ch01_s13_bridge",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "但是，光会切圆锥还不够。为了更精准地应用它们，我们需要算出它们。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/descartes.png" },
+      "next": "ch01_s13_descartes"
+    },
+    {
+      "id": "ch01_s13_descartes",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "到了17世纪，笛卡尔发明了坐标系。他给了我们一把金钥匙，让我们能推导出椭圆的方程。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/descartes.png" },
+      "next": "ch01_s13_end"
+    },
+    {
+      "id": "ch01_s13_end",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "下一章，我们就用这把钥匙，去解开椭圆的标准方程之谜！准备好了吗？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/descartes.png" },
+      "next": null
+    }
+  ]
+}

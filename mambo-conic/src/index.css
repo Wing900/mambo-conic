@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* ========== 主题基础颜色 ========== */
+  --color-warm-yellow: #FFF9E6;
+  --color-soft-pink: #FFE4E1;
+  --color-coral: #FFAB91;
+  --color-warm-brown: #5D4E37;
+
+  /* ========== 数学实验专用颜色 ========== */
+  /* 实验背景 */
+  --color-lab-bg: #FFFBF5;
+
+  /* 坐标轴颜色 */
+  --color-lab-axis: #8B7355;
+  --color-lab-grid: #D4C4A8;
+
+  /* 曲线颜色 - 主色 */
+  --color-lab-curve: #5D4E37;
+  --color-lab-curve-secondary: #8B7355;
+  --color-lab-curve-accent: #E07A5F;
+
+  /* 点的颜色 */
+  --color-lab-point: #FFE4E1;
+  --color-lab-point-stroke: #5D4E37;
+  --color-lab-point-focus: #FFAB91;
+  --color-lab-point-focus-stroke: #FF6F00;
+
+  /* 线段颜色 */
+  --color-lab-line: #8B7355;
+  --color-lab-line-dashed: #B8A88A;
+  --color-lab-line-highlight: #E07A5F;
+
+  /* 文字颜色 */
+  --color-lab-text: #5D4E37;
+  --color-lab-text-secondary: #8B7355;
+  --color-lab-text-accent: #E07A5F;
+
+  /* 填充颜色 */
+  --color-lab-fill: #FFF9E6;
+  --color-lab-fill-highlight: #FFE4E1;
+
+  /* ========== 字体 ========== */
+  --font-handwriting: "Ma Shan Zheng", cursive, sans-serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+
+  /* ========== 阴影 ========== */
+  --shadow-soft: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-paper: 0 4px 12px rgba(0,0,0,0.08);
+
+  /* ========== 圆角 ========== */
+  --radius-sketch: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+body {
+  background-color: var(--color-warm-yellow);
+  color: var(--color-warm-brown);
+  font-family: var(--font-body);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255,255,255,.05) 2px,
+      rgba(255,255,255,.05) 4px
+    );
+}
+
+.sketch-border {
+  border: 2px solid rgba(93,78,55,0.3);
+  border-radius: var(--radius-sketch);
+}
+
+.paper-texture {
+  position: relative;
+  background: rgba(255,255,255,0.6);
+}
+
+.paper-texture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05' /%3E%3C/svg%3E");
+  pointer-events: none;
+}

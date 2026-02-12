@@ -1,0 +1,113 @@
+{
+  "chapter": "第一章：探秘圆锥曲线的由来",
+  "scenes": [
+    {
+      "id": "ch01_s01_welcome",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "同学你好呀！欢迎来到今天的数学冒险。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/title_page.svg" },
+      "next": "ch01_s01_topic"
+    },
+    {
+      "id": "ch01_s01_topic",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "看看黑板，今天我们要开启一个全新的篇章——椭圆及其标准方程。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/title_page.svg" },
+      "next": "ch01_s01_question"
+    },
+    {
+      "id": "ch01_s01_question",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "不过呢，在去推导复杂的方程之前，我们得先搞清楚一个核心问题：椭圆这家伙，到底是从哪儿蹦出来的？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/title_page.svg" },
+      "next": "ch01_s02_review"
+    },
+    {
+      "id": "ch01_s02_review",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "别急，先回想一下。在之前的课程里，我们已经学会用坐标法来研究图形了。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/review_mindmap.svg" },
+      "next": "ch01_s02_detail"
+    },
+    {
+      "id": "ch01_s02_detail",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "你看，能不能判断直线和圆撞没撞上，或者两个圆是拥抱还是分离，我们靠的都是计算距离。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/review_mindmap.svg" },
+      "next": "ch01_s03_intro"
+    },
+    {
+      "id": "ch01_s03_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "光看不练假把式。曼波要考考你对这张图的理解。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/review_circles_highlight.svg" },
+      "next": "ch01_s03_question"
+    },
+    {
+      "id": "ch01_s03_question",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "如果两个圆的圆心距离 d，满足 |r₁ - r₂| < d < r₁ + r₂（夹在差与和之间），这就意味着它们是？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/review_circles_highlight.svg" },
+      "next": "ch01_s03_quiz"
+    },
+    {
+      "id": "ch01_s03_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "选出你的答案吧！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/review_circles_highlight.svg" },
+      "options": [
+        { "text": "A. 外离（谁也不挨着谁）", "correct": false, "next": "ch01_s03_wrong" },
+        { "text": "B. 相交（有两个交点）", "correct": true, "next": "ch01_s03_correct", "scoreChange": 10 },
+        { "text": "C. 内含（一个在另一个肚子里）", "correct": false, "next": "ch01_s03_wrong" }
+      ]
+    },
+    {
+      "id": "ch01_s03_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "完全正确！看来你的基础很扎实嘛。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/review_circles_highlight.svg" },
+      "next": "ch01_s04_intro"
+    },
+    {
+      "id": "ch01_s03_wrong",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "不对哦，再看看黑板上的思维导图？「外离」需要距离很大，「内含」需要距离很小。再试一次？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/review_circles_highlight.svg" },
+      "next": "ch01_s03_quiz"
+    },
+    {
+      "id": "ch01_s04_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "热身结束。现在，我们要把圆的「家族」扩大了。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/cone_circle.svg" },
+      "next": "ch01_s04_explain"
+    },
+    {
+      "id": "ch01_s04_explain",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "想象一下，用一个平面去切一个圆锥。就像切萝卜一样，切出来的那个面，我们叫它截口曲线。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/cone_circle.svg" },
+      "next": "ch01_s04_transition"
+    },
+    {
+      "id": "ch01_s04_transition",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "就像图上这样，当平面横着切（垂直于圆锥的轴）时，得到的图形是一个标准的圆。但如果我们换个姿势切呢？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch01/cone_circle.svg" },
+      "next": "ch01_s05_lab_start"
+    }
+  ]
+}
