@@ -1,0 +1,37 @@
+{
+  "chapter": "第二章：椭圆定义与数学严谨性探究",
+  "scenes": [
+    {
+      "id": "ch02_s01_logic",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "在解析几何的世界里，我们要遵循一套严谨的「攻略流程」。先从现实背景中提炼概念，这是第一步。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/logic_chain.svg" },
+      "next": "ch02_s01_transition"
+    },
+    {
+      "id": "ch02_s01_transition",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "刚才我们在圆锥上切出了椭圆，但这只是视觉上的观察。现在，我们要用坐标法给它一个精确的数学定义。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/logic_chain.svg" },
+      "next": "ch02_s02_circle"
+    },
+    {
+      "id": "ch02_s02_circle",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "类比圆的定义：到一个定点的距离等于常数的点的轨迹是圆。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/circle_definition.svg" },
+      "next": "ch02_s02_question"
+    },
+    {
+      "id": "ch02_s02_question",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "椭圆看起来也很对称，它是不是也能用「到一个定点的距离」来定义呢？咱们来实测一下。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/circle_definition.svg" },
+      "next": "ch02_s03_lab_start"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "chapter": "第二章：椭圆定义与数学严谨性探究",
+  "scenes": [
+    {
+      "id": "ch02_s05_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "是不是只要「和等于常数」，就一定能画出椭圆？我们来做一次严谨性检验。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/sum_conditions.svg" },
+      "next": "ch02_s05_triangle"
+    },
+    {
+      "id": "ch02_s05_triangle",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "正常情况下，M、F\u2081、F\u2082 构成三角形，两边之和大于第三边。这时候，我们能得到一个圆润的椭圆。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/sum_conditions.svg" },
+      "next": "ch02_s05_degenerate"
+    },
+    {
+      "id": "ch02_s05_degenerate",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "如果常数（绳长）恰好等于两点间距呢？根据两点之间线段最短，M 只能被锁在线段 F\u2081F\u2082 上。这时候，轨迹只是一条线段。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/sum_conditions.svg" },
+      "next": "ch02_s05_impossible"
+    },
+    {
+      "id": "ch02_s05_impossible",
+      "type": "dialogue",
+      "mambo": { "expression": "surprised" },
+      "dialogue": { "text": "如果常数比两点间距还要小，那连三角形的基本原则都违背了。此时，轨迹不存在。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/sum_conditions.svg" },
+      "next": "ch02_s06_definition"
+    },
+    {
+      "id": "ch02_s06_definition",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "excited" },
+      "dialogue": { "text": "至此，我们终于得到了椭圆最完美的定义：|MF\u2081| + |MF\u2082| = 2a，其中 2a > |F\u2081F\u2082|。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/ellipse_definition.svg" },
+      "next": "ch02_s06_video_intro"
+    },
+    {
+      "id": "ch02_s06_video_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "来吧，欣赏一段由数学公式生成的艺术——让我们看看这个定义是如何幻化成美妙曲线的。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/ellipse_definition.svg" },
+      "next": "ch02_s06_video"
+    },
+    {
+      "id": "ch02_s06_video",
+      "type": "dialogue",
+      "mambo": { "expression": "happy" },
+      "dialogue": { "text": "看，点 M 优雅地划过，实时满足 |MF\u2081| + |MF\u2082| = 2a，一条完美的椭圆就此诞生。" },
+      "blackboard": {
+        "type": "video",
+        "src": "/labvideo/ch02/ellipse_manim.mp4",
+        "autoplay": true,
+        "loop": true
+      },
+      "next": "ch02_s07_foci"
+    },
+    {
+      "id": "ch02_s07_foci",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "记住这两个名字。F\u2081 和 F\u2082 叫做焦点，|F\u2081F\u2082| 叫做焦距。焦点和焦距，是椭圆的「灵魂坐标」。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/foci_focal_distance.svg" },
+      "next": "ch02_s07_preview"
+    },
+    {
+      "id": "ch02_s07_preview",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "现在，概念提炼完成了。下一节，我们将拿起笛卡尔的画笔，把这个几何定义，翻译成数学方程！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/foci_focal_distance.svg" },
+      "next": "ch02_s07_end"
+    },
+    {
+      "id": "ch02_s07_end",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "准备好了吗？下一章见！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch02/foci_focal_distance.svg" },
+      "next": null
+    }
+  ]
+}

@@ -1,6 +1,13 @@
 import { useGameStore } from './store/useGameStore';
-import scenesData from './data/scenes/chapter01';
+import chapter01 from './data/scenes/chapter01';
+import chapter02 from './data/scenes/chapter02';
+import type { ChapterData } from './types/scene.types';
 import { logger } from './utils/logger';
+
+const allScenesData: ChapterData = {
+  chapter: 'all',
+  scenes: [...chapter01.scenes, ...chapter02.scenes],
+};
 
 // Screens
 import TitleScreen from './components/Screens/TitleScreen';
@@ -12,10 +19,11 @@ import { useSceneLoader } from './hooks/useSceneLoader';
 // Game Components
 import { GameHeader } from './components/Game/GameHeader';
 import { GameMain } from './components/Game/GameMain';
+import { IframePreloader } from './components/Game/IframePreloader';
 
 function App() {
-  const { currentScene, handleNext, handleChoice } = useSceneLoader(scenesData);
-  const { appPhase, gameMode } = useGameStore();
+  const { currentScene, handleNext, handleChoice } = useSceneLoader(allScenesData);
+  const { appPhase, gameMode, currentSceneId } = useGameStore();
 
   logger.debug('渲染, appPhase:', appPhase, 'gameMode:', gameMode);
 
@@ -54,6 +62,9 @@ function App() {
           handleChoice={handleChoice}
         />
       </div>
+
+      {/* iframe 预加载 */}
+      <IframePreloader currentSceneId={currentSceneId} scenesData={allScenesData} />
     </div>
   );
 }

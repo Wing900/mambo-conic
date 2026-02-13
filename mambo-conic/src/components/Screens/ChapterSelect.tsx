@@ -15,10 +15,10 @@ export default function ChapterSelect() {
     // Future chapters can be added here
     {
       id: 'chapter02',
-      title: '第二章：双曲线的秘密',
-      description: '（敬请期待）',
-      startScene: 'start',
-      locked: true,
+      title: '第二章：椭圆定义与数学严谨性探究',
+      description: '从实验中发现椭圆的秘密，用严谨的逻辑推导出完美定义！',
+      startScene: 'ch02_s01_logic',
+      locked: false,
     }
   ];
 
