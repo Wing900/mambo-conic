@@ -4,12 +4,14 @@ import { GameMode } from '../types/scene.types';
 import { getSceneAudioManager, getBackgroundMusicManager } from '../utils/audioManager';
 
 const STORAGE_KEY = 'mabo_lab_progress';
+const SAVE_VERSION = 2; // 递增此数字可强制清除旧存档
 
 export const useGameStore = create<GameStore>((set, get) => {
   // 保存进度到 localStorage
   const saveProgress = () => {
     const state = get();
     const saveData: SaveData = {
+      version: SAVE_VERSION,
       currentSceneId: state.currentSceneId,
       sceneHistory: state.sceneHistory,
       playerState: state.playerState,
@@ -195,7 +197,13 @@ export const useGameStore = create<GameStore>((set, get) => {
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (!saved) return null;
-        return JSON.parse(saved) as SaveData;
+        const data = JSON.parse(saved) as SaveData;
+        if (data.version !== SAVE_VERSION) {
+          console.warn('[GameStore] 存档版本不匹配，清除旧存档');
+          localStorage.removeItem(STORAGE_KEY);
+          return null;
+        }
+        return data;
       } catch (e) {
         console.warn('[GameStore] 加载存档失败:', e);
         return null;

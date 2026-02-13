@@ -23,6 +23,7 @@ export interface GameState {
 
 // 本地存储的进度数据
 export interface SaveData {
+  version?: number;
   currentSceneId: string;
   sceneHistory: string[];
   playerState: PlayerState;
