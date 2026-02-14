@@ -16,15 +16,24 @@ import ChapterSelect from './components/Screens/ChapterSelect';
 
 // Hooks
 import { useSceneLoader } from './hooks/useSceneLoader';
+import { useGameEntryPreloader } from './hooks/useGameEntryPreloader';
 
 // Game Components
 import { GameHeader } from './components/Game/GameHeader';
 import { GameMain } from './components/Game/GameMain';
 import { IframePreloader } from './components/Game/IframePreloader';
+import { GameLoadingScreen } from './components/Game/GameLoadingScreen';
 
 function App() {
   const { currentScene, handleNext, handleChoice } = useSceneLoader(allScenesData);
   const { appPhase, gameMode, currentSceneId } = useGameStore();
+  const { isLoading: isEntryLoading, progress: loadingProgress } = useGameEntryPreloader({
+    appPhase,
+    currentSceneId,
+    scenesData: allScenesData,
+    lookAhead: 3,
+    minLoadingMs: 650,
+  });
 
   logger.debug('渲染, appPhase:', appPhase, 'gameMode:', gameMode);
 
@@ -40,16 +49,12 @@ function App() {
 
   // --- 游戏主界面 ---
 
-  if (!currentScene) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-[#5D4E37] text-xl">加载中...</div>
-      </div>
-    );
+  if (appPhase === 'game' && (isEntryLoading || !currentScene)) {
+    return <GameLoadingScreen progress={loadingProgress} />;
   }
 
   return (
-    <div className="minh-screen flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4">
       {/* 主容器 */}
       <div className="w-full max-w-6xl h-[90vh] flex flex-col gap-4">
         {/* 顶部信息栏 */}

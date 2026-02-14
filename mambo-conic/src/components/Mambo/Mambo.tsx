@@ -4,15 +4,7 @@ import { mamboTransition } from '../../utils/animations';
 import { useGameStore } from '../../store/useGameStore';
 import { MamboExpression, MamboAction } from '../../types/scene.types';
 import { MamboProps } from '../../types/component.types';
-
-const expressionImages: Record<string, string> = {
-  normal: '/images/mambo_normal.png',
-  happy: '/images/mambo_happy.png',
-  sad: '/images/mambo_sad.png',
-  thinking: '/images/mambo_thinking.png',
-  excited: '/images/mambo_excited.png',
-  surprised: '/images/mambo_normal.png',
-};
+import { MAMBO_EXPRESSION_IMAGES } from '../../constants/mamboAssets';
 
 const placeholderSvg = (expression: MamboExpression, name: string): string =>
   `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="200" height="300"%3E%3Crect fill="%23FFE4E1" width="200" height="300"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" fill="%235D4E37" font-size="16"%3E${name}${expression === 'happy' ? '😊' : expression === 'sad' ? '😢' : expression === 'thinking' ? '🤔' : '😊'}%3C/text%3E%3C/svg%3E`;
@@ -56,11 +48,11 @@ type AvatarEmojis = Record<MamboExpression, string>;
 
 export default function Mambo({ expression = 'normal', action = 'idle', visible = true, mode = 'full', labelScale = 1 }: MamboProps) {
   const { characterName } = useGameStore();
-  const [imageSrc, setImageSrc] = useState(expressionImages[expression]);
+  const [imageSrc, setImageSrc] = useState(MAMBO_EXPRESSION_IMAGES[expression]);
   const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
-    setImageSrc(expressionImages[expression] || expressionImages.normal);
+    setImageSrc(MAMBO_EXPRESSION_IMAGES[expression] || MAMBO_EXPRESSION_IMAGES.normal);
     setImageError(false);
   }, [expression]);
 

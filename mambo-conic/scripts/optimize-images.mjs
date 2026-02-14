@@ -5,7 +5,7 @@
  */
 
 import sharp from 'sharp';
-import { readdirSync, statSync, readFileSync, writeFileSync } from 'fs';
+import { readdirSync, statSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 const IMAGES_DIR = './public/images';
@@ -15,17 +15,18 @@ async function optimizeImage(inputPath, outputPath) {
     const originalSize = statSync(inputPath).size;
 
     const image = sharp(inputPath);
-    const metadata = await image.metadata();
 
     // Optimize PNG: reduce quality and use efficient encoding
-    await image
+    const optimizedBuffer = await image
       .png({
         quality: 80,
         compressionLevel: 9,
         adaptiveFiltering: true,
         effort: 10
       })
-      .toFile(outputPath);
+      .toBuffer();
+
+    writeFileSync(outputPath, optimizedBuffer);
 
     const newSize = statSync(outputPath).size;
     const savings = ((originalSize - newSize) / originalSize * 100).toFixed(1);
