@@ -13,7 +13,7 @@
       "id": "ch02_s03_observe",
       "type": "dialogue",
       "mambo": { "expression": "thinking" },
-      "dialogue": { "text": "你看，距离在 4 到 6 之间不停地变动。看来，只靠一个定点是没法定义椭圆的。" },
+      "dialogue": { "text": "圆半径始终是一个定值，但是椭圆上的点到中心的距离 OP 却随着 P 位置的变化而不断变化。看来“用到一个定点的距离等于定长”是没法定义椭圆的。" },
       "blackboard": { "type": "lab", "labType": "lab-single-point" },
       "next": "ch02_s03_conclude"
     },
@@ -29,7 +29,7 @@
       "id": "ch02_s04_lab_start",
       "type": "dialogue",
       "mambo": { "expression": "excited" },
-      "dialogue": { "text": "现在画面中有两个定点 F\u2081、F\u2082 和椭圆上的动点 P。请观察右侧的四组运算结果，当 P 绕着椭圆走动时，哪个运算的结果始终没有变化？" },
+      "dialogue": { "text": "现在画面中有两个定点 F\u2081、F\u2082 和椭圆上的动点 P。这里，点击 P 绕椭圆运行的动画，请观察右侧的四组运算结果：当 P 绕着椭圆走动时，哪个运算的结果始终没有变化？" },
       "blackboard": { "type": "lab", "labType": "lab-four-ops" },
       "next": "ch02_s04_quiz"
     },

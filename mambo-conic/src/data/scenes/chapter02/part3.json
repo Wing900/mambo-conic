@@ -21,7 +21,7 @@
       "id": "ch02_s05_degenerate",
       "type": "dialogue",
       "mambo": { "expression": "thinking" },
-      "dialogue": { "text": "如果常数（绳长）恰好等于两点间距呢？根据两点之间线段最短，M 只能被锁在线段 F\u2081F\u2082 上。这时候，轨迹只是一条线段。" },
+      "dialogue": { "text": "如果常数（绳长）恰好等于两点间距呢？我们知道三角形两边之和大于第三边，但此时要求距离和等于第三边，所以这个时候构不成三角形。这时候，轨迹只是一条线段。" },
       "blackboard": { "type": "image", "src": "/labimage/ch02/sum_conditions.svg" },
       "next": "ch02_s05_impossible"
     },
@@ -37,7 +37,7 @@
       "id": "ch02_s06_definition",
       "type": "dialogue",
       "mambo": { "expression": "happy", "action": "excited" },
-      "dialogue": { "text": "至此，我们终于得到了椭圆最完美的定义：|MF\u2081| + |MF\u2082| = 2a，其中 2a > |F\u2081F\u2082|。" },
+      "dialogue": { "text": "至此，我们终于得到了椭圆最完美的定义：我们把平面内与两定点 F\u2081、F\u2082 的距离的和等于常数，且这个常数大于线段 F\u2081F\u2082 的长的点的轨迹叫做椭圆。" },
       "blackboard": { "type": "image", "src": "/labimage/ch02/ellipse_definition.svg" },
       "next": "ch02_s06_video_intro"
     },
@@ -53,7 +53,7 @@
       "id": "ch02_s06_video",
       "type": "dialogue",
       "mambo": { "expression": "happy" },
-      "dialogue": { "text": "看，点 M 优雅地划过，实时满足 |MF\u2081| + |MF\u2082| = 2a，一条完美的椭圆就此诞生。" },
+      "dialogue": { "text": "看，点 M 优雅地划过，始终满足到两个定点的距离之和为常数，且这个常数大于线段 F\u2081F\u2082 的长度，一条完美的椭圆就此诞生。" },
       "blackboard": {
         "type": "video",
         "src": "/labvideo/ch02/ellipse_manim.mp4",
@@ -66,7 +66,7 @@
       "id": "ch02_s07_foci",
       "type": "dialogue",
       "mambo": { "expression": "normal" },
-      "dialogue": { "text": "记住这两个名字。F\u2081 和 F\u2082 叫做焦点，|F\u2081F\u2082| 叫做焦距。焦点和焦距，是椭圆的「灵魂坐标」。" },
+      "dialogue": { "text": "记住这两个名字。F\u2081 和 F\u2082 叫做焦点，|F\u2081F\u2082| 叫做焦距。焦距是两定点间的距离，长轴是椭圆上两点的最短距离，短轴是椭圆上最近两点的距离。焦点和焦距，是椭圆的「灵魂坐标」。" },
       "blackboard": { "type": "image", "src": "/labimage/ch02/foci_focal_distance.svg" },
       "next": "ch02_s07_preview"
     },

@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import 'katex/dist/katex.min.css';
+import { BlockMath } from 'react-katex';
 import type { BlackboardContent } from '../../types/blackboard.types';
 import { blackboardLogger } from '../../utils/logger';
 import { LabRunner } from '../LabRunner';
@@ -75,7 +77,7 @@ export function Blackboard({ content }: BlackboardProps) {
       blackboardLogger.debug('渲染数学公式');
       return (
         <div className={content.className || 'w-full h-full flex items-center justify-center'} style={content.style}>
-          <div className="text-2xl font-mono">{content.content}</div>
+          <BlockMath math={content.content} errorColor="#cc0000" />
         </div>
       );
 

@@ -1,0 +1,160 @@
+{
+  "chapter": "第三章：代数之美——椭圆标准方程的构建",
+  "scenes": [
+    {
+      "id": "ch03_s07_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "化简到这一步，出现了 a\u00b2\u2212c\u00b2。因为它始终大于 0，我们不妨给它起个新名字。观察黑板上的直角三角形，你能找到它对应的线段吗？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/triangle_pof2.svg" },
+      "next": "ch03_s07_quiz"
+    },
+    {
+      "id": "ch03_s07_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "当 P 在短轴顶点时，a 对应 PF\u2082，c 对应 OF\u2082，那么 \u221a(a\u00b2\u2212c\u00b2) 对应的线段是？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/triangle_pof2.svg" },
+      "options": [
+        { "text": "A. PF\u2081", "correct": false, "next": "ch03_s07_wrong" },
+        { "text": "B. OF\u2081", "correct": false, "next": "ch03_s07_wrong" },
+        { "text": "C. OP（短轴半长）", "correct": true, "next": "ch03_s07_correct", "scoreChange": 10 }
+      ]
+    },
+    {
+      "id": "ch03_s07_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "没错！根据勾股定理，我们令 b = \u221a(a\u00b2\u2212c\u00b2)，即 b\u00b2 = a\u00b2\u2212c\u00b2。" },
+      "blackboard": { "type": "math", "content": "b = \\sqrt{a^2 - c^2}, \\quad b^2 = a^2 - c^2" },
+      "next": "ch03_s07_substitute"
+    },
+    {
+      "id": "ch03_s07_substitute",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "把 b\u00b2 = a\u00b2\u2212c\u00b2 代入方程，两边同除以 a\u00b2b\u00b2，看看会发生什么！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/derivation_final.svg" },
+      "next": "ch03_s08_reveal"
+    },
+    {
+      "id": "ch03_s07_wrong",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "再想想，当 P 在短轴顶点时，\u25b3POF\u2082 是直角三角形，OP 是一条直角边，用勾股定理算算看？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/triangle_pof2.svg" },
+      "next": "ch03_s07_quiz"
+    },
+    {
+      "id": "ch03_s08_reveal",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "把 b\u00b2 = a\u00b2\u2212c\u00b2 代入方程，两边同除以 a\u00b2b\u00b2，就得到了一个漂亮的方程！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/derivation_final.svg" },
+      "next": "ch03_s08_explain"
+    },
+    {
+      "id": "ch03_s08_explain",
+      "type": "dialogue",
+      "mambo": { "expression": "happy" },
+      "dialogue": { "text": "这就是焦点在 x 轴上的椭圆标准方程！它不仅对称、简洁，还充满和谐的美感。" },
+      "blackboard": { "type": "math", "content": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0)" },
+      "next": "ch03_s08_transition"
+    },
+    {
+      "id": "ch03_s08_transition",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "那么，如果焦点跑到了 y 轴上呢？通过类比推导，方程会变成什么样？让我们做个实验观察一下。" },
+      "blackboard": { "type": "math", "content": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\quad (a > b > 0)" },
+      "next": "ch03_s08_lab"
+    },
+    {
+      "id": "ch03_s08_lab",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "滑动滑块，观察焦点在不同轴上时，分母的大小关系有什么规律？" },
+      "blackboard": { "type": "lab", "labType": "lab-classify" },
+      "next": "ch03_s08_quiz"
+    },
+    {
+      "id": "ch03_s08_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "观察发现，当焦点在 x 轴时，x\u00b2 下的分母较____；当焦点在 y 轴时，y\u00b2 下的分母较____。" },
+      "blackboard": { "type": "lab", "labType": "lab-classify" },
+      "options": [
+        { "text": "A. 较小；较大", "correct": false, "next": "ch03_s08_wrong" },
+        { "text": "B. 较大；较大", "correct": true, "next": "ch03_s08_correct", "scoreChange": 10 }
+      ]
+    },
+    {
+      "id": "ch03_s08_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "记住了，谁的分母大，焦点就在谁的轴上！" },
+      "blackboard": { "type": "lab", "labType": "lab-classify" },
+      "next": "ch03_s09_intro"
+    },
+    {
+      "id": "ch03_s08_wrong",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "再仔细看看实验，焦点所在的轴对应的分母一定是更大的那个哦！" },
+      "blackboard": { "type": "lab", "labType": "lab-classify" },
+      "next": "ch03_s08_quiz"
+    },
+    {
+      "id": "ch03_s09_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "恭喜！你已经完成了本次探秘。从圆锥的切割，到拉绳实验，再到现在的代数方程。我们一起总结一下吧。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/summary.svg" },
+      "next": "ch03_s09_summary"
+    },
+    {
+      "id": "ch03_s09_summary",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "圆锥曲线包含椭圆、双曲线、抛物线和圆。而我们推导出的椭圆标准方程有两种形式。来做最后一道检验题！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/standard_eq_axes.svg" },
+      "next": "ch03_s09_quiz"
+    },
+    {
+      "id": "ch03_s09_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "以下哪个是椭圆的标准方程？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/standard_eq_axes.svg" },
+      "options": [
+        { "text": "A. x\u00b2/a\u00b2 - y\u00b2/b\u00b2 = 1 (a>b>0)", "correct": false, "next": "ch03_s09_wrong" },
+        { "text": "B. x\u00b2/a\u00b2 + y\u00b2/b\u00b2 = 1 (a>b>0)，焦点在 x 轴", "correct": true, "next": "ch03_s09_correct", "scoreChange": 10 },
+        { "text": "C. x\u00b2/a\u00b2 + y\u00b2/b\u00b2 = 1 (b>a>0)，焦点在 x 轴", "correct": false, "next": "ch03_s09_wrong" }
+      ]
+    },
+    {
+      "id": "ch03_s09_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "完美！记住，AB 两种形式都是椭圆标准方程，只是焦点位置不同。a 永远是较大的那个分母的根！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/standard_eq_axes.svg" },
+      "next": "ch03_s09_end"
+    },
+    {
+      "id": "ch03_s09_wrong",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "注意哦，椭圆标准方程是加号不是减号，而且 a 始终大于 b 大于 0。焦点在谁的轴上取决于谁的分母更大！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/standard_eq_axes.svg" },
+      "next": "ch03_s09_quiz"
+    },
+    {
+      "id": "ch03_s09_end",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "下次探险，我们将深入研究椭圆的几何性质。坐标法是我们的纽带，数学之美永不止步。再见啦！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/ending.svg" },
+      "next": null
+    }
+  ]
+}

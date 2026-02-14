@@ -1,12 +1,13 @@
 import { useGameStore } from './store/useGameStore';
 import chapter01 from './data/scenes/chapter01';
 import chapter02 from './data/scenes/chapter02';
+import chapter03 from './data/scenes/chapter03';
 import type { ChapterData } from './types/scene.types';
 import { logger } from './utils/logger';
 
 const allScenesData: ChapterData = {
   chapter: 'all',
-  scenes: [...chapter01.scenes, ...chapter02.scenes],
+  scenes: [...chapter01.scenes, ...chapter02.scenes, ...chapter03.scenes],
 };
 
 // Screens

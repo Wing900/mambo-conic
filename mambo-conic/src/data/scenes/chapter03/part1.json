@@ -1,0 +1,93 @@
+{
+  "chapter": "第三章：代数之美——椭圆标准方程的构建",
+  "scenes": [
+    {
+      "id": "ch03_s01_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "通过上一关的探秘，我们已经得到了椭圆的几何定义。接下来，我们要遵循解析几何的内在逻辑，建立椭圆的方程！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/descartes.png" },
+      "next": "ch03_s01_question"
+    },
+    {
+      "id": "ch03_s01_question",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "还记得我们在第一关提到的人物笛卡尔吗？正是他开启了用代数研究几何的大门。那么，他到底发明了什么，才让我们能「算」出图形呢？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/descartes.png" },
+      "next": "ch03_s01_quiz"
+    },
+    {
+      "id": "ch03_s01_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "笛卡尔发明了：" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/descartes.png" },
+      "options": [
+        { "text": "A. 向量", "correct": false, "next": "ch03_s01_wrong_b" },
+        { "text": "B. 坐标系", "correct": true, "next": "ch03_s01_correct", "scoreChange": 10 },
+        { "text": "C. 复数", "correct": false, "next": "ch03_s01_wrong_c" }
+      ]
+    },
+    {
+      "id": "ch03_s01_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "答对啦！到了17世纪，笛卡尔发明了坐标系，从此人们开始利用代数的手段研究圆锥曲线。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/descartes.png" },
+      "next": "ch03_s02_intro"
+    },
+    {
+      "id": "ch03_s01_wrong_b",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "不对哦，向量是历经两千多年、多位学者接力完成的，并非笛卡尔一蹴而就。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/descartes.png" },
+      "next": "ch03_s01_quiz"
+    },
+    {
+      "id": "ch03_s01_wrong_c",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "复数的平面表示那是18-19世纪韦塞尔等人的功劳啦。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/descartes.png" },
+      "next": "ch03_s01_quiz"
+    },
+    {
+      "id": "ch03_s02_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "既然有了坐标系，你猜猜看，用坐标法研究曲线，第一步应该做什么？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_method.svg" },
+      "next": "ch03_s02_quiz"
+    },
+    {
+      "id": "ch03_s02_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "用坐标法研究曲线的正确第一步是：" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_method.svg" },
+      "options": [
+        { "text": "A. 画出图形", "correct": false, "next": "ch03_s02_wrong" },
+        { "text": "B. 直接列方程", "correct": false, "next": "ch03_s02_wrong" },
+        { "text": "C. 建立合适的坐标系", "correct": true, "next": "ch03_s02_correct", "scoreChange": 10 }
+      ]
+    },
+    {
+      "id": "ch03_s02_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "完全正确！坐标法四步走：建系、设点、列式化简、检验等价性。第一步就是建立坐标系！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_method.svg" },
+      "next": "ch03_s03_intro"
+    },
+    {
+      "id": "ch03_s02_wrong",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "不对哦，万事开头难，第一步得先有坐标系才能设坐标、列方程呀！再想想？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_method.svg" },
+      "next": "ch03_s02_quiz"
+    }
+  ]
+}

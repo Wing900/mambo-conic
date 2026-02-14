@@ -1,0 +1,140 @@
+{
+  "chapter": "第三章：代数之美——椭圆标准方程的构建",
+  "scenes": [
+    {
+      "id": "ch03_s03_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "让我们开始第一步：确定坐标系。如何建系更合理呢？在回答前，我们先做个实验探索一下椭圆的特殊几何性质。" },
+      "blackboard": { "type": "lab", "labType": "lab-symmetry" },
+      "next": "ch03_s03_observe"
+    },
+    {
+      "id": "ch03_s03_observe",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "拖动滑动条，尝试上下、左右翻折椭圆，你发现了什么？椭圆长得匀称吗？" },
+      "blackboard": { "type": "lab", "labType": "lab-symmetry" },
+      "next": "ch03_s03_quiz1"
+    },
+    {
+      "id": "ch03_s03_quiz1",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "关于椭圆的对称性，下面哪个说法是正确的？" },
+      "blackboard": { "type": "lab", "labType": "lab-symmetry" },
+      "options": [
+        { "text": "A. 椭圆是轴对称图形，有 2 条互相垂直的对称轴", "correct": true, "next": "ch03_s03_correct1", "scoreChange": 10 },
+        { "text": "B. 椭圆不是轴对称图形", "correct": false, "next": "ch03_s03_wrong1" },
+        { "text": "C. 椭圆有 2 条以上对称轴", "correct": false, "next": "ch03_s03_wrong1" }
+      ]
+    },
+    {
+      "id": "ch03_s03_correct1",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "观察得很细致！椭圆有两条互相垂直的对称轴。既然椭圆这么对称，我们当然要利用这一点来简化计算。" },
+      "blackboard": { "type": "lab", "labType": "lab-symmetry" },
+      "next": "ch03_s03_quiz2"
+    },
+    {
+      "id": "ch03_s03_wrong1",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "不对哦，再仔细翻折一下看看，椭圆沿哪些方向翻折后能和自己重合？" },
+      "blackboard": { "type": "lab", "labType": "lab-symmetry" },
+      "next": "ch03_s03_quiz1"
+    },
+    {
+      "id": "ch03_s03_quiz2",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "你认为怎么建系最省力？" },
+      "blackboard": { "type": "lab", "labType": "lab-symmetry" },
+      "options": [
+        { "text": "A. 以 F\u2081F\u2082 所在直线为 x 轴，线段 F\u2081F\u2082 的垂直平分线为 y 轴", "correct": true, "next": "ch03_s03_correct2", "scoreChange": 10 },
+        { "text": "B. 任意选择建立坐标轴的方式", "correct": false, "next": "ch03_s03_wrong2" }
+      ]
+    },
+    {
+      "id": "ch03_s03_correct2",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "聪明！充分发挥对称性的便利，能让后面的计算少走很多弯路。" },
+      "blackboard": { "type": "lab", "labType": "lab-symmetry" },
+      "next": "ch03_s04_intro"
+    },
+    {
+      "id": "ch03_s03_wrong2",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "任意建系虽然可以，但会让计算变得很复杂。利用椭圆的对称性来建系才是聪明的选择！" },
+      "blackboard": { "type": "lab", "labType": "lab-symmetry" },
+      "next": "ch03_s03_quiz2"
+    },
+    {
+      "id": "ch03_s04_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "建系完成！我们设焦距为 2c，那么焦点坐标就是……" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_setup.svg" },
+      "next": "ch03_s04_quiz1"
+    },
+    {
+      "id": "ch03_s04_quiz1",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "焦点的坐标是：" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_setup.svg" },
+      "options": [
+        { "text": "A. F\u2081(c, 0), F\u2082(-c, 0)", "correct": false, "next": "ch03_s04_wrong1" },
+        { "text": "B. F\u2081(-c, 0), F\u2082(c, 0)", "correct": true, "next": "ch03_s04_correct1", "scoreChange": 10 },
+        { "text": "C. F\u2081(0, -c), F\u2082(0, c)", "correct": false, "next": "ch03_s04_wrong1" }
+      ]
+    },
+    {
+      "id": "ch03_s04_correct1",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "没错！接着，我们设椭圆上任意一点为 P(x, y)。根据上一关的定义，它必须满足什么条件？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_setup.svg" },
+      "next": "ch03_s04_quiz2"
+    },
+    {
+      "id": "ch03_s04_wrong1",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "注意哦，我们约定 F\u2081 在左边、F\u2082 在右边，焦点在 x 轴上。再想想？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_setup.svg" },
+      "next": "ch03_s04_quiz1"
+    },
+    {
+      "id": "ch03_s04_quiz2",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "椭圆上的点 P 必须满足的条件是：" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_setup.svg" },
+      "options": [
+        { "text": "A. 到两定点距离之差等于常数", "correct": false, "next": "ch03_s04_wrong2" },
+        { "text": "B. 到两定点距离之和等于常数即可", "correct": false, "next": "ch03_s04_wrong2" },
+        { "text": "C. 到两定点距离之和等于常数，且该常数大于焦距", "correct": true, "next": "ch03_s04_correct2", "scoreChange": 10 }
+      ]
+    },
+    {
+      "id": "ch03_s04_correct2",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "不错，看来第二关没白过！距离之和等于常数 2a，且 2a > 2c。" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_setup.svg" },
+      "next": "ch03_s05_intro"
+    },
+    {
+      "id": "ch03_s04_wrong2",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "回忆一下第二关的结论，椭圆定义中距离之和必须严格大于两焦点间距才行哦！" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/coord_setup.svg" },
+      "next": "ch03_s04_quiz2"
+    }
+  ]
+}

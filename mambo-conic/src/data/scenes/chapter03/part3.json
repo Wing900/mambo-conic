@@ -1,0 +1,91 @@
+{
+  "chapter": "第三章：代数之美——椭圆标准方程的构建",
+  "scenes": [
+    {
+      "id": "ch03_s05_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "normal" },
+      "dialogue": { "text": "我们设常数为 2a。现在，请把「距离之和等于 2a」翻译成代数式。还记得两点间距离公式吗？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/distance_formula.svg" },
+      "next": "ch03_s05_quiz"
+    },
+    {
+      "id": "ch03_s05_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "|PF\u2081| + |PF\u2082| = 2a 的坐标表示为：" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/distance_formula.svg" },
+      "options": [
+        { "text": "A. (x+c)\u00b2+y\u00b2 + \u221a[(x-c)\u00b2+y\u00b2] = 2a", "correct": false, "next": "ch03_s05_wrong" },
+        { "text": "B. \u221a[(x+c)\u00b2+y\u00b2] + \u221a[(x-c)\u00b2+y\u00b2] = 2a", "correct": true, "next": "ch03_s05_correct", "scoreChange": 10 }
+      ]
+    },
+    {
+      "id": "ch03_s05_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "完美！两个距离公式都用上了根号。接下来就是化简这个「双根号怪兽」了！" },
+      "blackboard": { "type": "math", "content": "\\sqrt{(x+c)^2+y^2} + \\sqrt{(x-c)^2+y^2} = 2a" },
+      "next": "ch03_s06_intro"
+    },
+    {
+      "id": "ch03_s05_wrong",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "注意哦，距离公式要对两段距离都加根号，不能漏掉一个！看看黑板上的图，P 到 F\u2081 的距离应该怎么写？" },
+      "blackboard": { "type": "image", "src": "/labimage/ch03/distance_formula.svg" },
+      "next": "ch03_s05_quiz"
+    },
+    {
+      "id": "ch03_s06_intro",
+      "type": "dialogue",
+      "mambo": { "expression": "sad" },
+      "dialogue": { "text": "呜哇，这个方程含有两个根号，看起来好难算！下一步该怎么化简呢？" },
+      "blackboard": { "type": "math", "content": "\\sqrt{(x+c)^2+y^2} + \\sqrt{(x-c)^2+y^2} = 2a" },
+      "next": "ch03_s06_quiz"
+    },
+    {
+      "id": "ch03_s06_quiz",
+      "type": "choice",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "怎么化简这个双根号方程？" },
+      "blackboard": { "type": "math", "content": "\\sqrt{(x+c)^2+y^2} + \\sqrt{(x-c)^2+y^2} = 2a" },
+      "options": [
+        { "text": "A. 直接两边同时平方", "correct": false, "next": "ch03_s06_wrong" },
+        { "text": "B. 先移项，再平方", "correct": true, "next": "ch03_s06_correct", "scoreChange": 10 }
+      ]
+    },
+    {
+      "id": "ch03_s06_wrong",
+      "type": "dialogue",
+      "mambo": { "expression": "sad", "action": "shake" },
+      "dialogue": { "text": "直接平方试试看？两边平方后变成这样……交叉项里还有根号，越算越复杂了！还是试试先移项再平方吧。" },
+      "blackboard": { "type": "math", "content": "\\text{直接平方：} \\\\ \\\\ \\left(\\sqrt{(x+c)^2+y^2} + \\sqrt{(x-c)^2+y^2}\\right)^2 = 4a^2 \\\\ \\\\ (x+c)^2+y^2 + (x-c)^2+y^2 + 2\\sqrt{[(x+c)^2+y^2][(x-c)^2+y^2]} = 4a^2 \\\\ \\\\ \\text{根号里还有乘积，无法继续化简！}" },
+      "next": "ch03_s06_quiz"
+    },
+    {
+      "id": "ch03_s06_correct",
+      "type": "dialogue",
+      "mambo": { "expression": "happy", "action": "bounce" },
+      "dialogue": { "text": "好主意！移项后再平方，可以分两次消掉根号。让我们看推导全过程……" },
+      "blackboard": { "type": "math", "content": "\\text{第一步：移项} \\\\ \\\\ \\sqrt{(x+c)^2+y^2} = 2a - \\sqrt{(x-c)^2+y^2}" },
+      "next": "ch03_s06_step2"
+    },
+    {
+      "id": "ch03_s06_step2",
+      "type": "dialogue",
+      "mambo": { "expression": "thinking" },
+      "dialogue": { "text": "两边平方，左边根号消掉了。右边展开后整理，把剩下的根号项单独留在一边……" },
+      "blackboard": { "type": "math", "content": "\\text{两边平方：} \\\\ \\\\ (x+c)^2+y^2 = 4a^2 - 4a\\sqrt{(x-c)^2+y^2} + (x-c)^2+y^2 \\\\ \\\\ \\text{整理得：} \\\\ \\\\ a^2 - cx = a\\sqrt{(x-c)^2+y^2}" },
+      "next": "ch03_s06_step3"
+    },
+    {
+      "id": "ch03_s06_step3",
+      "type": "dialogue",
+      "mambo": { "expression": "excited" },
+      "dialogue": { "text": "再次平方，消去最后一个根号，整理得到：" },
+      "blackboard": { "type": "math", "content": "\\text{再次平方：} \\\\ \\\\ (a^2-cx)^2 = a^2\\left[(x-c)^2+y^2\\right] \\\\ \\\\ a^4 - 2a^2cx + c^2x^2 = a^2x^2 - 2a^2cx + a^2c^2 + a^2y^2 \\\\ \\\\ \\text{整理：} \\\\ \\\\ (a^2-c^2)x^2 + a^2 y^2 = a^2(a^2-c^2)" },
+      "next": "ch03_s07_intro"
+    }
+  ]
+}

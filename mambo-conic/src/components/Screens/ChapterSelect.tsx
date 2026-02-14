@@ -19,6 +19,13 @@ export default function ChapterSelect() {
       description: '从实验中发现椭圆的秘密，用严谨的逻辑推导出完美定义！',
       startScene: 'ch02_s01_logic',
       locked: false,
+    },
+    {
+      id: 'chapter03',
+      title: '第三章：代数之美——椭圆标准方程的构建',
+      description: '从几何定义出发，用坐标法推导出椭圆标准方程，感受代数与几何的完美融合！',
+      startScene: 'ch03_s01_intro',
+      locked: false,
     }
   ];
 
