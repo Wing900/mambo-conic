@@ -1,10 +1,12 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
 import { useGameStore } from '../../store/useGameStore';
 import Button from '../UI/Button';
 import Mambo from '../Mambo/Mambo';
 
 export default function TitleScreen() {
   const { setAppPhase, isAudioEnabled, toggleAudio, toggleBackgroundMusic, isBackgroundMusicEnabled, hasSavedProgress, continueGame } = useGameStore();
+  const [showAbout, setShowAbout] = useState(false);
 
   const hasSaved = hasSavedProgress();
 
@@ -19,6 +21,43 @@ export default function TitleScreen() {
         {/* 左上角小装饰 */}
         <div className="absolute top-6 left-8 font-handwriting text-warm-brown/30 text-xl -rotate-12 select-none">
           Math & Fun
+        </div>
+
+        {/* 右上角关于按钮 */}
+        <div className="absolute top-5 right-6">
+          <button
+            onClick={() => setShowAbout(!showAbout)}
+            className="text-warm-brown/30 hover:text-warm-brown/60 transition-colors text-xs font-body tracking-wide"
+          >
+            About
+          </button>
+          <AnimatePresence>
+            {showAbout && (
+              <motion.div
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.2 }}
+                className="absolute right-0 top-8 sketch-border paper-texture bg-white/90 rounded-xl shadow-paper px-5 py-4 min-w-[210px] z-50"
+              >
+                <p className="font-handwriting text-warm-brown text-sm mb-3">SCNU · Mabo Lab</p>
+                <div className="text-xs font-body text-warm-brown/60 space-y-1.5">
+                  <div className="flex justify-between gap-6">
+                    <span className="text-warm-brown/35">Team</span>
+                    <span className="text-warm-brown/70">Bin & Wjszbd</span>
+                  </div>
+                  <div className="flex justify-between gap-6">
+                    <span className="text-warm-brown/35">Mail</span>
+                    <span className="text-warm-brown/70">2249381074@qq.com</span>
+                  </div>
+                  <div className="flex justify-between gap-6">
+                    <span className="text-warm-brown/35">Year</span>
+                    <span className="text-warm-brown/70">2026</span>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         {/* 标题区 */}

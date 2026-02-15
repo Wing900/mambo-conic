@@ -14,7 +14,8 @@
         "type": "image",
         "src": "/labimage/ch03/triangle_pof2.svg"
       },
-      "next": "ch03_s07_quiz"
+      "next": "ch03_s07_quiz",
+      "tts_text": "化简到这一步，出现了 a的平方减c的平方。因为它始终大于 0，我们不妨给它起个新名字。观察黑板上的直角三角形，你能找到它对应的线段吗？"
     },
     {
       "id": "ch03_s07_quiz",
@@ -46,7 +47,8 @@
           "next": "ch03_s07_correct",
           "scoreChange": 10
         }
-      ]
+      ],
+      "tts_text": "当 P 在短轴顶点时，a 对应 P F2，c 对应 O F2，那么根号下a的平方减c的平方对应的线段是？"
     },
     {
       "id": "ch03_s07_correct",
@@ -62,7 +64,8 @@
         "type": "math",
         "content": "b = \\sqrt{a^2 - c^2}, \\quad b^2 = a^2 - c^2"
       },
-      "next": "ch03_s07_substitute"
+      "next": "ch03_s07_substitute",
+      "tts_text": "没错！根据勾股定理，我们令 b 等于根号下a的平方减c的平方，即 b的平方等于a的平方减c的平方。"
     },
     {
       "id": "ch03_s07_substitute",
@@ -77,7 +80,8 @@
         "type": "image",
         "src": "/labimage/ch03/derivation_final.svg"
       },
-      "next": "ch03_s08_reveal"
+      "next": "ch03_s08_reveal",
+      "tts_text": "把 b的平方等于a的平方减c的平方代入方程，两边同除以 a的平方乘b的平方，看看会发生什么！"
     },
     {
       "id": "ch03_s07_wrong",
@@ -93,7 +97,8 @@
         "type": "image",
         "src": "/labimage/ch03/triangle_pof2.svg"
       },
-      "next": "ch03_s07_quiz"
+      "next": "ch03_s07_quiz",
+      "tts_text": "再想想，当 P 在短轴顶点时，三角形 P O F2 是直角三角形，O P 是一条直角边，用勾股定理算算看？"
     },
     {
       "id": "ch03_s08_reveal",
@@ -108,7 +113,8 @@
         "type": "image",
         "src": "/labimage/ch03/derivation_final.svg"
       },
-      "next": "ch03_s08_explain"
+      "next": "ch03_s08_explain",
+      "tts_text": "把 b的平方等于a的平方减c的平方代入方程，两边同除以 a的平方乘b的平方，就得到了一个漂亮的方程！"
     },
     {
       "id": "ch03_s08_explain",
@@ -180,7 +186,8 @@
           "next": "ch03_s08_correct",
           "scoreChange": 10
         }
-      ]
+      ],
+      "tts_text": "观察发现，当焦点在 x 轴时，x的平方下的分母较什么；当焦点在 y 轴时，y的平方下的分母较什么。"
     },
     {
       "id": "ch03_s08_correct",
@@ -255,7 +262,8 @@
         "type": "lab",
         "labType": "lab-classify"
       },
-      "next": "ch03_s09_intro"
+      "next": "ch03_s09_intro",
+      "tts_text": "没错！无论焦点在哪个轴上，都有长半轴的平方等于短半轴的平方加半焦距的平方，即 a的平方等于b的平方加c的平方。记住这个关系，后面会经常用到！"
     },
     {
       "id": "ch03_s08_abc_wrong",
