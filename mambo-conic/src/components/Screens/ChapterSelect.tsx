@@ -1,33 +1,9 @@
 import { motion } from 'framer-motion';
 import { useGameStore } from '../../store/useGameStore';
+import { CHAPTERS } from '../../constants/chapters';
 
 export default function ChapterSelect() {
   const { setAppPhase, goToScene, toggleBackgroundMusic, isBackgroundMusicEnabled } = useGameStore();
-
-  const chapters = [
-    {
-      id: 'chapter01',
-      title: '第一章：探秘圆锥曲线的由来',
-      description: '椭圆从哪来？用平面切圆锥，亲手发现椭圆、抛物线和双曲线！',
-      startScene: 'ch01_s01_welcome',
-      locked: false,
-    },
-    // Future chapters can be added here
-    {
-      id: 'chapter02',
-      title: '第二章：椭圆定义与数学严谨性探究',
-      description: '从实验中发现椭圆的秘密，用严谨的逻辑推导出完美定义！',
-      startScene: 'ch02_s01_logic',
-      locked: false,
-    },
-    {
-      id: 'chapter03',
-      title: '第三章：代数之美——椭圆标准方程的构建',
-      description: '从几何定义出发，用坐标法推导出椭圆标准方程，感受代数与几何的完美融合！',
-      startScene: 'ch03_s01_intro',
-      locked: false,
-    }
-  ];
 
   const handleStartChapter = (startScene: string) => {
     goToScene(startScene);
@@ -57,7 +33,7 @@ export default function ChapterSelect() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {chapters.map((chapter, index) => (
+        {CHAPTERS.map((chapter, index) => (
           <motion.div
             key={chapter.id}
             initial={{ opacity: 0, y: 20 }}

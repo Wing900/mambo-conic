@@ -133,6 +133,9 @@ export const useGameStore = create<GameStore>((set, get) => {
         const sceneAudioManager = getSceneAudioManager(get().isAudioEnabled);
         sceneAudioManager.stop();
         sceneAudioManager.play(previous);
+
+        // 返回上一场景后也要保存，避免刷新后回到旧状态
+        saveProgress();
       }
     },
 

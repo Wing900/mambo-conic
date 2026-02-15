@@ -17,6 +17,7 @@ import ChapterSelect from './components/Screens/ChapterSelect';
 // Hooks
 import { useSceneLoader } from './hooks/useSceneLoader';
 import { useGameEntryPreloader } from './hooks/useGameEntryPreloader';
+import { useChapterProgress } from './hooks/useChapterProgress';
 
 // Game Components
 import { GameHeader } from './components/Game/GameHeader';
@@ -26,7 +27,7 @@ import { GameLoadingScreen } from './components/Game/GameLoadingScreen';
 
 function App() {
   const { currentScene, handleNext, handleChoice } = useSceneLoader(allScenesData);
-  const { appPhase, gameMode, currentSceneId } = useGameStore();
+  const { appPhase, gameMode, currentSceneId, sceneHistory, goToScene } = useGameStore();
   const { isLoading: isEntryLoading, progress: loadingProgress } = useGameEntryPreloader({
     appPhase,
     currentSceneId,
@@ -34,6 +35,7 @@ function App() {
     lookAhead: 3,
     minLoadingMs: 650,
   });
+  const chapterProgress = useChapterProgress(allScenesData, currentSceneId, sceneHistory);
 
   logger.debug('渲染, appPhase:', appPhase, 'gameMode:', gameMode);
 
@@ -58,7 +60,20 @@ function App() {
       {/* 主容器 */}
       <div className="w-full max-w-6xl h-[90vh] flex flex-col gap-4">
         {/* 顶部信息栏 */}
-        <GameHeader />
+        <GameHeader
+          progress={{
+            label: `${chapterProgress.chapterTitle.split('：')[0]} · 学习进度`,
+            current: chapterProgress.currentUnit,
+            total: chapterProgress.totalUnits,
+            maxAdjustable: chapterProgress.totalUnits,
+          }}
+          onAdjustProgress={(targetUnit) => {
+            const targetSceneId = chapterProgress.getSceneIdByUnit(targetUnit);
+            if (targetSceneId) {
+              goToScene(targetSceneId);
+            }
+          }}
+        />
 
         {/* 黑板与对话区域 */}
         <GameMain

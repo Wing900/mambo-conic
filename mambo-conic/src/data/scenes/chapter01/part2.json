@@ -6,9 +6,10 @@
       "type": "dialogue",
       "mambo": { "expression": "excited", "action": "excited" },
       "dialogue": { "text": "实验开始！现在控制权交给你。请注意看，现在的角度 α = 90°。" },
+      "tts_text": "实验开始！现在控制权交给你。请注意看，现在的角度阿尔法等于90度。",
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s05_instruct"
     },
@@ -17,9 +18,10 @@
       "type": "dialogue",
       "mambo": { "expression": "normal" },
       "dialogue": { "text": "请试着拖动滑块，让平面稍微倾斜一点点（减小 α），但不要倾斜得太厉害。观察一下截面变成了什么样子？" },
+      "tts_text": "请试着拖动滑块，让平面稍微倾斜一点点（减小阿尔法），但不要倾斜得太厉害。观察一下截面变成了什么样子？",
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s06_observe"
     },
@@ -30,7 +32,7 @@
       "dialogue": { "text": "停！就是这里。你看这个截面，它还是圆吗？" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s06_choice"
     },
@@ -41,7 +43,7 @@
       "dialogue": { "text": "仔细观察截面的形状，选出你的判断。" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "options": [
         { "text": "A. 还是圆，只是被拉远了", "correct": false, "next": "ch01_s06_wrong" },
@@ -55,7 +57,7 @@
       "dialogue": { "text": "不仅仅是视觉误差哦，它的长宽比例真的变了。再仔细看看？" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s06_choice"
     },
@@ -66,7 +68,7 @@
       "dialogue": { "text": "没错，它被压扁拉长了。" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s06_define"
     },
@@ -77,7 +79,7 @@
       "dialogue": { "text": "在这个状态下，平面比母线「缓」一些，但又没垂直。我们把这种闭合的曲线，称之为椭圆。" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s07_intro"
     },
@@ -86,9 +88,10 @@
       "type": "dialogue",
       "mambo": { "expression": "surprised" },
       "dialogue": { "text": "接下来我们要寻找一个特殊的瞬间。请继续减小角度 α……" },
+      "tts_text": "接下来我们要寻找一个特殊的瞬间。请继续减小角度阿尔法……",
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s07_instruct"
     },
@@ -97,9 +100,10 @@
       "type": "dialogue",
       "mambo": { "expression": "normal" },
       "dialogue": { "text": "小心！请把滑块拖动到 α 刚好等于 θ 的位置，也就是平面和圆锥边缘的那条线（母线）平行的时候。" },
+      "tts_text": "小心！请把滑块拖动到阿尔法刚好等于西塔的位置，也就是平面和圆锥边缘的那条线（母线）平行的时候。",
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s08_observe"
     },
@@ -110,7 +114,7 @@
       "dialogue": { "text": "看！发生了什么？现在的曲线还是封闭的一圈吗？" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s08_choice"
     },
@@ -121,7 +125,7 @@
       "dialogue": { "text": "观察曲线的形态，它还是闭合的吗？" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "options": [
         { "text": "A. 还是封闭的", "correct": false, "next": "ch01_s08_wrong" },
@@ -135,7 +139,7 @@
       "dialogue": { "text": "仔细看曲线的底部，它没有连起来哦，它漏了！" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s08_choice"
     },
@@ -146,7 +150,7 @@
       "dialogue": { "text": "是的！因为它和母线平行，所以永远切不到底，它就这样无限延伸出去了。" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s08_define"
     },
@@ -157,7 +161,7 @@
       "dialogue": { "text": "这个特殊的、无法闭合的曲线，就是我们在物理里学过的抛物线。" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s09_intro"
     },
@@ -166,9 +170,10 @@
       "type": "dialogue",
       "mambo": { "expression": "excited" },
       "dialogue": { "text": "如果我们比平行还要更倾斜呢？把滑块拉到最底端吧！（α < θ）" },
+      "tts_text": "如果我们比平行还要更倾斜呢？把滑块拉到最底端吧！（阿尔法小于西塔）",
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s10_observe"
     },
@@ -179,7 +184,7 @@
       "dialogue": { "text": "哇！平面竟然切到了圆锥的上半部分！" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s10_define"
     },
@@ -190,7 +195,7 @@
       "dialogue": { "text": "这时候，截口曲线变成了上下两支，像背对背的两个人。我们把它叫做双曲线。" },
       "blackboard": {
         "type": "iframe",
-        "src": "https://ggbpuppy.5051001.xyz/share/n9mf6j9?embed=true"
+        "src": "https://ggbpuppy.5051001.xyz/share/2ceqosv?embed=true"
       },
       "next": "ch01_s11_summary"
     }

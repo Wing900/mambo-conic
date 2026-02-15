@@ -14,6 +14,7 @@
       "type": "dialogue",
       "mambo": { "expression": "normal" },
       "dialogue": { "text": "那曼波要问这最后也是最重要的问题了：想要得到我们要学的椭圆，角度 α 必须满足什么条件？" },
+      "tts_text": "那曼波要问这最后也是最重要的问题了：想要得到我们要学的椭圆，角度阿尔法必须满足什么条件？",
       "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
       "next": "ch01_s11_quiz"
     },
@@ -34,6 +35,7 @@
       "type": "dialogue",
       "mambo": { "expression": "thinking" },
       "dialogue": { "text": "α = θ 可是刚才那个合不拢的抛物线哦。重选！" },
+      "tts_text": "阿尔法等于西塔可是刚才那个合不拢的抛物线哦。重选！",
       "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
       "next": "ch01_s11_quiz"
     },
@@ -50,6 +52,7 @@
       "type": "dialogue",
       "mambo": { "expression": "happy", "action": "excited" },
       "dialogue": { "text": "BINGO！完全正确！θ < α < 90°，这就是椭圆诞生的条件。" },
+      "tts_text": "BINGO！完全正确！西塔小于阿尔法小于90度，这就是椭圆诞生的条件。",
       "blackboard": { "type": "image", "src": "/labimage/ch01/curves_comparison.svg" },
       "next": "ch01_s12_history"
     },

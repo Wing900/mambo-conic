@@ -54,6 +54,7 @@
       "type": "dialogue",
       "mambo": { "expression": "normal" },
       "dialogue": { "text": "如果两个圆的圆心距离 d，满足 |r₁ - r₂| < d < r₁ + r₂（夹在差与和之间），这就意味着它们是？" },
+      "tts_text": "如果两个圆的圆心距离 d，满足 r1 减 r2 的绝对值小于 d 小于 r1 加 r2（夹在差与和之间），这就意味着它们是？",
       "blackboard": { "type": "image", "src": "/labimage/ch01/review_circles_highlight.svg" },
       "next": "ch01_s03_quiz"
     },

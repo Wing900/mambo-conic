@@ -13,7 +13,7 @@
       "id": "ch03_s05_quiz",
       "type": "choice",
       "mambo": { "expression": "thinking" },
-      "dialogue": { "text": "|PF\u2081| + |PF\u2082| = 2a 的坐标表示为：" },
+      "dialogue": { "text": "根据两点间的距离公式，|PF\u2081| + |PF\u2082| = 2a 可以用下面哪个等式表示？" },
       "blackboard": { "type": "image", "src": "/labimage/ch03/distance_formula.svg" },
       "options": [
         { "text": "A. (x+c)\u00b2+y\u00b2 + \u221a[(x-c)\u00b2+y\u00b2] = 2a", "correct": false, "next": "ch03_s05_wrong" },

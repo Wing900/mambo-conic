@@ -5,7 +5,7 @@
       "id": "ch02_s03_lab_start",
       "type": "dialogue",
       "mambo": { "expression": "excited" },
-      "dialogue": { "text": "请点击左下角的动画按钮，观察点 P' 在椭圆上运动时，它到中心 O 的距离数值。" },
+      "dialogue": { "text": "请点击左下角的动画按钮，观察点 P 在椭圆上运动时，它到中心 O 的距离数值。" },
       "blackboard": { "type": "lab", "labType": "lab-single-point" },
       "next": "ch02_s03_observe"
     },
@@ -22,7 +22,7 @@
       "type": "dialogue",
       "mambo": { "expression": "normal" },
       "dialogue": { "text": "既然一个点不行，那如果是两个定点呢？我们来看看到两个定点的各种运算结果。" },
-      "blackboard": { "type": "lab", "labType": "lab-single-point" },
+      "blackboard": { "type": "lab", "labType": "lab-four-ops" },
       "next": "ch02_s04_lab_start"
     },
     {
