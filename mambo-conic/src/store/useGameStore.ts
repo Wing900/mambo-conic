@@ -48,7 +48,7 @@ export const useGameStore = create<GameStore>((set, get) => {
       const currentPhase = get().appPhase;
 
       const bgmManager = getBackgroundMusicManager();
-      const sceneAudioManager = getSceneAudioManager(get().isAudioEnabled);
+      const sceneAudioManager = getSceneAudioManager();
 
       // 离开 title/chapters 去其他页面时，停止背景音乐
       if ((currentPhase === 'title' || currentPhase === 'chapters') &&
@@ -76,6 +76,11 @@ export const useGameStore = create<GameStore>((set, get) => {
         set({ isBackgroundMusicEnabled: false });
       } else {
         getSceneAudioManager().setEnabled(true);
+        // 重新开启时，自动播放当前场景的语音
+        const currentScene = get().currentSceneId;
+        if (currentScene && get().appPhase === 'game') {
+          getSceneAudioManager().play(currentScene);
+        }
       }
     },
 
@@ -108,7 +113,7 @@ export const useGameStore = create<GameStore>((set, get) => {
       }));
 
       // 停止当前场景语音，播放新场景语音
-      const sceneAudioManager = getSceneAudioManager(get().isAudioEnabled);
+      const sceneAudioManager = getSceneAudioManager();
       sceneAudioManager.stop();
       sceneAudioManager.play(sceneId);
 
@@ -130,7 +135,7 @@ export const useGameStore = create<GameStore>((set, get) => {
         });
 
         // 停止当前场景语音，播放返回场景语音
-        const sceneAudioManager = getSceneAudioManager(get().isAudioEnabled);
+        const sceneAudioManager = getSceneAudioManager();
         sceneAudioManager.stop();
         sceneAudioManager.play(previous);
 
@@ -175,7 +180,7 @@ export const useGameStore = create<GameStore>((set, get) => {
         isBackgroundMusicEnabled: false,
       });
 
-      // 停止所有音频
+      // 停止所有音频（不改变启用状态）
       getSceneAudioManager().stop();
       getBackgroundMusicManager().stop();
 
@@ -225,7 +230,7 @@ export const useGameStore = create<GameStore>((set, get) => {
       });
 
       // 播放场景语音
-      const sceneAudioManager = getSceneAudioManager(get().isAudioEnabled);
+      const sceneAudioManager = getSceneAudioManager();
       sceneAudioManager.play(saved.currentSceneId);
     },
   };

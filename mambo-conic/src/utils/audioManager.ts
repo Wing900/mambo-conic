@@ -54,6 +54,7 @@ export class SceneAudioManager {
   private currentAudio: HTMLAudioElement | null = null;
   private enabled: boolean = true;
   private currentSceneId: string = '';
+  private playId: number = 0;
 
   constructor(enabled: boolean = true) {
     this.enabled = enabled;
@@ -78,11 +79,15 @@ export class SceneAudioManager {
 
     this.stop();
     this.currentSceneId = sceneId;
+    const thisPlayId = ++this.playId;
 
     // 按优先级尝试不同格式
     const urls = getAllPossibleSceneUrls(sceneId);
 
     for (const url of urls) {
+      // 如果已经被新的 play 调用取代，放弃
+      if (this.playId !== thisPlayId) return false;
+
       try {
         const audio = new Audio(url);
 
@@ -107,6 +112,12 @@ export class SceneAudioManager {
         });
 
         await loadPromise;
+
+        // 加载完成后再次检查是否被取代
+        if (this.playId !== thisPlayId) {
+          audio.pause();
+          return false;
+        }
 
         // 加载成功，开始播放
         this.currentAudio = audio;
@@ -266,6 +277,7 @@ export class BackgroundMusicManager {
   pause(): void {
     if (this.audio) {
       this.audio.pause();
+      this.isPlaying = false;
     }
   }
 
@@ -300,11 +312,9 @@ export class BackgroundMusicManager {
 let globalSceneAudioManager: SceneAudioManager | null = null;
 let globalBackgroundMusicManager: BackgroundMusicManager | null = null;
 
-export function getSceneAudioManager(enabled: boolean = true): SceneAudioManager {
+export function getSceneAudioManager(): SceneAudioManager {
   if (!globalSceneAudioManager) {
-    globalSceneAudioManager = new SceneAudioManager(enabled);
-  } else {
-    globalSceneAudioManager.setEnabled(enabled);
+    globalSceneAudioManager = new SceneAudioManager();
   }
   return globalSceneAudioManager;
 }
