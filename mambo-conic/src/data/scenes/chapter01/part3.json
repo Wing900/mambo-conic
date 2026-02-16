@@ -94,7 +94,7 @@
       "mambo": { "expression": "happy", "action": "bounce" },
       "dialogue": { "text": "下一章，我们就用这把钥匙，去解开椭圆的标准方程之谜！准备好了吗？" },
       "blackboard": { "type": "image", "src": "/labimage/ch01/descartes.png" },
-      "next": null
+      "next": "ch02_s01_logic"
     }
   ]
 }

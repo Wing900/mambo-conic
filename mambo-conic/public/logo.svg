@@ -1,0 +1,11 @@
+<svg width="240" height="80" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- 斜椭圆脸型 (旋转 -15度) -->
+  <ellipse cx="40" cy="45" rx="35" ry="20" fill="#FFF9E6" stroke="#FFAB91" stroke-width="4" transform="rotate(-15 40 45)" />
+  <!-- 眼睛落在焦点位置 (让数学定义拟人化) -->
+  <circle cx="25" cy="42" r="4" fill="#5D4E37" />
+  <circle cx="55" cy="38" r="4" fill="#5D4E37" />
+  <!-- 曼波那标志性的小嘴 -->
+  <path d="M38 48 Q40 52 42 48" fill="none" stroke="#5D4E37" stroke-width="2" stroke-linecap="round" />
+  <!-- 文字部分 -->
+  <text x="90" y="55" font-family="Arial, sans-serif" font-weight="900" font-size="24" fill="#5D4E37">Mambo Lab</text>
+</svg>
